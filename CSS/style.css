@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+
+body{
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+#container{
+    margin: 0 auto 0;
+    height: 100%;
+}
+
+#sousContainer{
+    /* position: relative; */
+    /* height: 535px; */
+    height: auto;
+    max-width: 300px;
+    background-color: white;
+    margin: 12.4rem auto 5rem;
+    /* margin: 12.4rem 1rem 5rem 2.7rem; */
+    border-radius: 24px;
+    padding: 0 2rem;
+}
+
+#containerImage{
+    position: relative;
+}
+
+.imageDesktop{
+    display: none;
+}
+
+#containerImage:first-child{
+    position: absolute;
+    margin: -9rem -0.7rem;
+}
+
+#containerImage img:nth-child(2){
+    position: absolute;
+    margin: 9rem -20rem;
+}
+
+#containerText{
+    padding: 11.5rem 0.1rem 0rem;
+    max-width: 350px;
+}
+
+h1{
+    font-size: 2.7rem;
+    text-align: center;
+    margin-bottom: 2.9rem;
+    /* 
+    to see inside
+    margin-bottom: -0.5rem; */
+    /* 
+    to see between question 
+    margin-bottom: 7rem; */
+
+}
+
+.QandA{
+   margin-bottom: 3.14rem;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 1.3rem; */
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+h2{
+    font-size: 1.1rem;
+    letter-spacing: -0.1px;
+}
+
+.arrow{
+    /* unstrech the arrows
+    https://stackoverflow.com/questions/37609642/why-does-flexbox-stretch-my-image-rather-than-retaining-aspect-ratio */
+    align-self: center;
+}
+
+.arrow2{
+    transform: rotate(180deg);
+}
+
+.answer{
+    line-height: 17px;
+    margin-right: 2rem;
+    display: none;
+}
+
+h2:hover{
+    color: ;
+}
+
+@media only screen and (min-width: 1025px){
+    
+    body{
+        height: 100vh;
+        z-index: ;
+    }
+    
+    #sousContainer{
+        max-width: 850px;
+        max-height: 700px;
+        margin: 12.4rem auto 5rem;
+        
+    } 
+    
+    .imageMobile{
+        display: none;
+    }
+    
+    .imageDesktop{
+        display: block;
+    }
+    
+    #containerImage img:nth-child(3){
+        position: absolute;
+        margin: 12rem -6rem;
+    }
+    
+    #containerImage img:nth-child(4){
+        position: absolute;
+        margin: -20rem -47rem;
+        z-index: ;
+    }
+    
+    #containerImage img:nth-child(5){
+        position: absolute;
+        margin: 23rem -9rem;
+    }
+
+    #containerText{
+        margin: 0 0 0 50%;
+        padding: 5.5rem 0.1rem 0rem;
+    }
+}
+
